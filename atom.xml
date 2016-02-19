@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Heis og sånn</title>
+	<link href="http://www.heisogsånn.no/atom.xml" rel="self"/>
+	<link href="http://www.heisogsånn.no"/>
+	<updated>2016-02-19T22:08:17.245Z</updated>
+	<id>http://www.heisogsånn.no</id>
+	<author>
+		<name>jhsveli</name>
+		<email>jhsveli@gmail.com</email>
+	</author>
+	
+</feed>
