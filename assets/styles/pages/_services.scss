@@ -3,7 +3,6 @@ p.intro {
 }
 
 #menu-container {
-    @include clearfix;
     padding-bottom: 1em;
     ul#menu {
         text-transform: uppercase;
@@ -12,7 +11,7 @@ p.intro {
             a {
                 color: black;
                 &:hover {
-                    color: $wunderdog-red;
+                    color: $red;
                 }
                 &.selected {
                     font-weight: bold;
@@ -26,14 +25,13 @@ p.intro {
 }
 
 article.service {
-    @include clearfix;
     display: none;
     &:target {
         display: block;
         padding-top: 1em;
     }
     a {
-        color: $wunderdog-red;
+        color: $red;
     }
     h2, h3, h4, h5 {
         text-align: left;

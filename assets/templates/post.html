@@ -14,7 +14,7 @@
     {% if page.image %}<img src="../images/posts/{{page.image}}" alt="{{page.title}}">{% endif %}
     {{content|safe}}
 </article>
-{% if page.allowComments %}
+{% if false || page.allowComments %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         'use strict';

@@ -37,14 +37,13 @@ h1.page-title {
 }
 
 
-section {
-    @include clearfix;
+section {    
     margin-bottom: 15px;
     padding: 5px;
     text-align: center;
     &.blog {
         display: table;
-        background-color: $wunderdog-accent;
+        background-color: $accent;
         article {
             display: table-cell;
             width: 33%;
@@ -55,7 +54,7 @@ section {
                 text-transform: uppercase;
                 color: darkgray;
                 &:hover {
-                    color: $wunderdog-red;
+                    color: $red;
                 }
             }
         }
@@ -93,14 +92,14 @@ section {
                     text-transform: uppercase;
                     color: darkgray;
                     i, &:hover {
-                        color: $wunderdog-red;
+                        color: $red;
                     }
                 }
             }
         }
     }
     &.testimonials {
-        background-color: $wunderdog-accent;
+        background-color: $accent;
         h3 {
             padding-top: 1.5em;
         }
@@ -148,7 +147,7 @@ section {
                     }
                     a.more {
                         font-size: 3em;
-                        color: $wunderdog-red;
+                        color: $red;
                     }
                 }
             }
