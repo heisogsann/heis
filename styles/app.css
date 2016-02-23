@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
@@ -2137,67 +2137,54 @@ a.btn {
   content: ""; }
 
 body {
-  padding: 0 2em;
-  font-size: 16px;
+  transition: font-size .3s ease-in-out;
+  font-size: 20px;
   line-height: 1.5;
-  font-family: 'Source Sans Pro', HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: 'Roboto', HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-weight: 300;
   color: #343136; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-weight: bold;
-    text-align: left;
-    text-transform: uppercase;
-    color: #ee1d25; }
-  body h1 {
-    font-size: 3em; }
-  body h2 {
-    font-size: 1.5em; }
-  body a {
-    text-decoration: none; }
-    body a, body a:visited {
-      color: black; }
-    body a:hover {
-      color: #ee1d25; }
   body .content,
   body > header,
   body > footer {
     width: 100%;
     font-size: 100%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 2em;
+    box-sizing: border-box; }
   body .content {
     padding-top: 1.5em;
     background: white; }
     body .content h1, body .content h2, body .content h3, body .content h4, body .content h5, body .content h6 {
-      color: #ee1d25;
-      font-family: 'Source Sans Pro', HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+      margin: 1.2em 0 .5em;
+      color: #f26c4f;
+      font-family: 'Roboto', HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, Sans-serif;
       font-size: 1.15em; }
       body .content h1 a, body .content h2 a, body .content h3 a, body .content h4 a, body .content h5 a, body .content h6 a {
         text-decoration: none;
-        color: #ee1d25; }
+        color: #f26c4f; }
     body .content h1.page-title {
+      margin-top: 0;
       min-width: 100%;
       font-weight: normal;
-      padding: 10px;
       color: #343136;
       font-size: 1.8em;
       text-align: left; }
-    body .content .page-content {
-      padding: 1em; }
     body .content p {
-      padding-bottom: 10px; }
+      margin-bottom: .5em;
+      max-width: 600px; }
   body > header {
     display: block;
     background-size: cover;
     padding-top: 4em; }
     body > header a.logo {
-      text-align: right;
-      margin-left: 2em; }
+      text-align: right; }
       body > header a.logo:after {
         content: "H";
         border-radius: 50%;
         font-size: 4rem;
         padding: .5em .75em;
-        background: #f45;
+        background: #f26c4f;
         color: white; }
     body > header ul.menu {
       position: absolute;
@@ -2206,7 +2193,7 @@ body {
       padding-left: 10px;
       margin-right: 2em; }
       body > header ul.menu li.active a {
-        color: #ee1d25;
+        color: #f26c4f;
         font-weight: bold; }
     body > header ul.social {
       position: absolute;
@@ -2214,7 +2201,7 @@ body {
       right: 10px;
       padding: 10px; }
       body > header ul.social li:hover {
-        color: #ee1d25; }
+        color: #f26c4f; }
   body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6,
   body > footer h1,
   body > footer h2,
@@ -2233,40 +2220,29 @@ body {
         padding-right: 20px; }
     body > header a {
       text-transform: uppercase; }
-  body > footer div.links {
+  body > footer {
     background-color: #333333;
-    height: 15em; }
-    body > footer div.links h1 {
+    color: #fff;
+    text-align: center; }
+    body > footer h1 {
       color: white;
       font-size: 1.1em;
       font-weight: normal;
       padding-bottom: .5em;
-      text-align: left; }
-    body > footer div.links a {
-      color: #9b9999; }
-      body > footer div.links a:hover {
-        color: #ee1d25; }
-    body > footer div.links address, body > footer div.links p {
-      padding-bottom: 1em;
-      color: #9b9999; }
-    body > footer div.links i {
-      color: #ee1d25; }
-    body > footer div.links > div {
-      padding: 2em;
-      width: 27%;
-      float: left; }
-      body > footer div.links > div > a {
+      text-align: center; }
+    body > footer a {
+      color: #f26c4f; }
+      body > footer a:hover {
+        color: #f26c4f; }
+    body > footer address, body > footer p {
+      padding-bottom: 1em; }
+      body > footer address > a, body > footer p > a {
         color: white; }
-  body > footer ul.copyright {
-    margin: 1.5em;
-    list-style-type: none;
-    font-size: 1em;
-    text-transform: uppercase; }
-    body > footer ul.copyright li {
-      display: inline;
-      padding-right: 20px; }
-    body > footer ul.copyright a, body > footer ul.copyright a:visited {
-      color: #ee1d25; }
+    body > footer .copyright {
+      text-align: center;
+      text-transform: uppercase; }
+      body > footer .copyright a, body > footer .copyright a:visited {
+        color: #f26c4f; }
   body.home .slideshow {
     position: relative; }
     body.home .slideshow input {
@@ -2307,7 +2283,7 @@ body {
           text-transform: uppercase;
           color: darkgray; }
           body.home section.blog article a.more:hover {
-            color: #ee1d25; }
+            color: #f26c4f; }
     body.home section.welcome {
       text-align: center;
       border-bottom: solid 1px lightgray;
@@ -2336,7 +2312,7 @@ body {
           text-transform: uppercase;
           color: darkgray; }
           body.home section.info ul li a i, body.home section.info ul li a:hover {
-            color: #ee1d25; }
+            color: #f26c4f; }
     body.home section.testimonials {
       background-color: #eeeeee; }
       body.home section.testimonials h3 {
@@ -2379,7 +2355,7 @@ body {
               display: block; }
             body.home section.testimonials .samples article > div a.more {
               font-size: 3em;
-              color: #ee1d25; }
+              color: #f26c4f; }
   body.about #info {
     border-bottom: solid 1px lightgray; }
     body.about #info article.about {
@@ -2418,7 +2394,7 @@ body {
     body.contact form button {
       padding: 1em;
       font-size: 1.1em;
-      color: #ee1d25; }
+      color: #f26c4f; }
   body.blog .post-snippet {
     margin-bottom: 1em;
     padding: 1em;
@@ -2450,7 +2426,7 @@ body {
         body.services #menu-container ul#menu li a {
           color: black; }
           body.services #menu-container ul#menu li a:hover {
-            color: #ee1d25; }
+            color: #f26c4f; }
           body.services #menu-container ul#menu li a.selected {
             font-weight: bold; }
   body.services article.service {
@@ -2459,7 +2435,7 @@ body {
       display: block;
       padding-top: 1em; }
     body.services article.service a {
-      color: #ee1d25; }
+      color: #f26c4f; }
     body.services article.service h2, body.services article.service h3, body.services article.service h4, body.services article.service h5 {
       text-align: left; }
     body.services article.service ul {
@@ -2485,6 +2461,38 @@ body {
     body.testimonials article ul {
       float: right;
       font-style: italic; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  color: #f26c4f; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 1.5em; }
+
+a {
+  text-decoration: none; }
+  a, a:visited {
+    color: black; }
+  a:hover {
+    color: #f26c4f; }
+
+ul {
+  margin-bottom: 0.5em; }
+  ul li::before {
+    content: "*";
+    color: #f26c4f;
+    margin-right: .7em; }
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 16px; }
+  a.logo::after {
+    font-size: 2rem; } }
 
 .sr-only {
   position: absolute;
