@@ -5,8 +5,7 @@ load: "1000 KG til 30.000 KG"
 shortDescription: "Løftebord med to mekanisk synkroniserte saksearmer sikrer konstruksjonens stabilitet."
 ---
 
-__Belastning: 1000 kg til 30.000 kg__
-
+**Belastning: 1000 kg til 30.000 kg**
 **Løftehøyde: opp til 1800 mm (standard)**
 
 Løftebord med to mekanisk synkroniserte saksearmer sikrer konstruksjonens stabilitet.
