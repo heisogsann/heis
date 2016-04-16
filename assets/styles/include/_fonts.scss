@@ -1,5 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500|Alfa+Slab+One);
 
+@font-face {
+    font-family: 'kg_lego_houseregular';
+    src: url('../fonts/kglegohouse-webfont.eot');
+    src: url('../fonts/kglegohouse-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kglegohouse-webfont.woff2') format('woff2'),
+         url('../fonts/kglegohouse-webfont.woff') format('woff'),
+         url('../fonts/kglegohouse-webfont.ttf') format('truetype'),
+         url('../fonts/kglegohouse-webfont.svg#kg_lego_houseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*@font-face {
     font-family: 'novecento_wide_demiboldbold';

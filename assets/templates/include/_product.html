@@ -1,0 +1,5 @@
+<h2>{{product.title}}</h2>
+{% if product.image %}
+    <img src="{{site.urlRoot}}images/products/{{products.image}}" alt="{{product.title}}" />
+{% endif %}
+{{product.content|safe}}

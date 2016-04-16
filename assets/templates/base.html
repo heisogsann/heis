@@ -37,36 +37,42 @@
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-PFHQJQ');</script>
         <!-- End Google Tag Manager -->
+
+        
+        
+        <section id="page">
         <header>
-            <a href="{{site.urlRoot}}" class="logo" title="Til startsiden"><span class="sr-only">Heis og Sånn</span></a>
-            <!--ul class="menu">
-                <li {% if page.nav == "home"%}class="active"{% endif%}>
-                    <a href="{{site.urlRoot}}">Home</a>
-                </li>
-                <li {% if page.nav == "about"%}class="active"{% endif%}>
-                    <a href="{{site.urlRoot}}about.html">About</a>
-                </li>
-                <li {% if page.nav == "services"%}class="active"{% endif%}>
-                    <a href="{{site.urlRoot}}services.html">Services</a>
-                </li>
-                <li {% if page.nav == "testimonials"%}class="active"{% endif%}>
-                    <a href="{{site.urlRoot}}testimonials.html">Testimonials</a>
-                </li>
-                <li {% if page.nav == "blog"%}class="active"{% endif%}>
-                    <a href="{{site.urlRoot}}blog.html">Blog</a>
-                </li>
-                <li {% if page.nav == "contact"%}class="active"{% endif%}>
-                    <a href="{{site.urlRoot}}contact.html">Contact</a>
-                </li>
-            </ul-->            
+            <section class="content">
+                <div class="logo">
+                    <a href="{{site.urlRoot}}" class="logo-img" title="Til startsiden">
+                        <img src="{{site.urlRoot}}images/gubbe.png" alt="Heis og Sånn"/>
+                    </a>
+                    <a href="{{site.urlRoot}}" title="Til startsiden"><strong>Heis og Sånn</strong></a>
+                </div>
+            
+                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                <nav>
+                    <h3>Meny</h3>
+                    <a href="{{site.urlRoot}}om.html">Om oss</a>
+                    <a href="{{site.urlRoot}}loftebord.html">Om løftebord</a>
+                    <a href="{{site.urlRoot}}produkter.html">Produkter</a>
+                    <a href="#kontakt">Kontakt</a>
+                </nav>
+                <label for="nav-trigger"></label>
+                
+                
+            </section>
         </header>
-        <section class="content">
-            <h1 class="page-title">{{page.title}}</h1>
-            <div class="page-content">{% block content %}{% endblock %}</div>
+            <section class="content">
+                {% if page.nav !== "hjem" %}
+                <h1 class="page-title">{{page.title}}</h1>
+                {% endif %}
+                <div class="page-content">{% block content %}{% endblock %}</div>
+            </section>
         </section>
         <footer>
             
-            <div>
+            <div class="content" id="kontakt">
                 <h1>Kontaktinformasjon</h1>
                 <address>
                     Heis og sånn AS<br>

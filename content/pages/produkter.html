@@ -1,0 +1,21 @@
+{% extends "page.html" %}
+{% set page.title = "Produkter" %}
+{% set page.nav = "produkter" %}
+
+{% block content %}
+    <div id="menu-container">
+        <ul id="menu">            
+            {% for product in site.products %}
+                <li>
+                    <a href="#produkt-{{product.title|slugify|lower}}">{{product.title}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>    
+
+    {% for product in site.products %}
+        <article id="produkt-{{product.title|slugify|lower}}" class="product">
+            {% include "include/_product.html" %}
+        </article>
+    {% endfor %}
+{% endblock %}

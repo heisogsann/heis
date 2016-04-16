@@ -185,27 +185,27 @@ gulp.task('testimonials', function () {
 })
 
 
-gulp.task('services', function () {
-    // Copy testimonial images over.
-    var images = gulp.src('content/services/*.jpg')
-        .pipe(gulp.dest('dist/images/services'))
+gulp.task('products', function () {
+    // Copy product images over.
+    var images = gulp.src('content/products/*.jpg')
+        .pipe(gulp.dest('dist/images/products'))
 
-    var services = gulp.src('content/services/**/*.md')
+    var products = gulp.src('content/products/**/*.md')
         .pipe(frontMatter({property: 'page', remove: true}))
         .pipe(marked())
-        // Collect all the services and place them on the site object.
+        // Collect all the product and place them on the site object.
         .pipe((function () {
-            var services = []
+            var products = []
             return through.obj(function (file, enc, cb) {
                 if (file.page.published){
-                    services.push(file.page)
-                    services[services.length - 1].content = file.contents.toString()
+                    products.push(file.page)
+                    products[products.length - 1].content = file.contents.toString()
                     this.push(file)
                 }
                 cb()
             },
             function (cb) {
-                services.sort(function (a, b) {
+                products.sort(function (a, b) {
                     if (a.author < b.author) {
                         return -1;
                     }
@@ -214,12 +214,12 @@ gulp.task('services', function () {
                     }
                     return 0;
                 })
-                site.services = services
+                site.products = products
                 cb()
             })
         })())
 
-    return merge(images, services)
+    return merge(images, products)
         .pipe(connect.reload())
 })
 
@@ -230,7 +230,7 @@ gulp.task('cleanpages', function () {
 })
 
 
-gulp.task('pages', ['cleanpages', 'testimonials', 'services',], function () {
+gulp.task('pages', ['cleanpages', 'products',], function () {
     var html = gulp.src(['content/pages/*.html'])
         .pipe(frontMatter({property: 'page', remove: true}))
         .pipe(through.obj(function (file, enc, cb) {
@@ -390,7 +390,7 @@ gulp.task('watch', ['default'], function () {
     gulp.watch(['assets/fonts/**'], ['fonts'])
     gulp.watch(['assets/extra/**'], ['extra'])
 
-    gulp.watch(['content/pages/**', 'content/testimonials/**', 'content/services/**'], ['pages'])
+    gulp.watch(['content/pages/**', 'content/products/**'], ['pages'])
     gulp.watch(['content/posts/**'], ['posts', 'rss'])
 
     scripts(true)

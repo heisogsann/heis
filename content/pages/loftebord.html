@@ -1,0 +1,63 @@
+{% extends "page.html" %}
+{% set page.title = "Løftebord" %}
+{% set page.nav = "loftebord" %}
+
+{% block content %}
+<div id="info">
+    <article class="about ingress">        
+        <p>Våre løftebord er robuste, slitesterke maskiner som er konstruert for å tilby mange år med 
+        pålitelighet når det gjelder bruk og funksjon samt med minimalt vedlikehold.</p>
+    </article>
+</div>
+<div id="konstruksjon">
+    <h1>Løftebordets konstruksjon</h1>
+    <article id="bunnramme">
+        <!-- <img id="lynn-photo" src="{{site.urlRoot}}images/about/lynn.png" alt="Lynn Wunderli"> -->
+        <h3>Bunnramme</h3>
+        
+        <p>støtte for resten av enheten. Den må være kraftig, sterk og stabil. 
+        I de fleste tilfelle er den konstruert for å være plassert på gulv, men kan også bygges inn i en 
+        grop eller utstyres med hjul eller jekketralleunderstell for å gjøre løftebordet mobilt.</p>
+    </article>
+
+    <article id="saksesystem">
+        <!-- <img id="peter-photo" src="{{site.urlRoot}}images/about/peter.png" alt="Peter Wunderli"> -->
+        <h3>Løftebordets saksesystem</h3>
+        
+        <p>Løftebordets sakser bidrar til en stabil og jevn vertikal bevegelse samtidig som plattformen 
+        eller toppen har støtte. De to saksebenene sitter sammen med aksler i midten av samt de øvre og nedre ledede endene.</p>
+    </article>
+
+    <article id="lofteplattform">
+        <!-- <img id="peter-photo" src="{{site.urlRoot}}images/about/peter.png" alt="Peter Wunderli"> -->
+        <h3>Løftebordets løfteplattform/bordplate</h3>
+        
+        <p>Bordplaten til et løftebord kan ha hvilken størrelse som helst som er kompatibel med 
+        løftebordets bunnramme og sakser. Først og fremst kan bordplaten ikke være mindre enn 
+        lengden eller bredden på saksene/bunnrammen. </p>
+        <p>Bordplaten kan være lengre enn saksene/bunnrammen og kan utstyres med ett stort utvalg 
+        av tilbehør som transportbånd, svingskiver, tiltbord eller bord utstyrt med bøyler eller andre 
+        spesielle arbeidshjelpemidler.</p>
+    </article>  
+
+    <article id="hydraulikkaggregat">
+    <!-- <img id="peter-photo" src="{{site.urlRoot}}images/about/peter.png" alt="Peter Wunderli"> -->
+    <h3>Løftebordets hydraulikkaggregat</h3>
+
+    <p>Hydraulikkaggregatet (for det meste elektrohydraulisk) består av en elektrisk motor, en 
+    hydraulisk pumpe, en hydraulisk tank, hydraulisk sylinder, rørledninger, ventiler og elektrisk 
+    kontrollsystem. </p>
+    <p>Når OPP-knappen er aktivert, pumper pumpen hydraulikkolje fra tanken in i sylinderne,
+    hvilket får stempelet og akslene til å bevege seg. Hydraulikksylinderne er mekanisk linket til 
+    saksen og driver dem til å heve plattformen. En tilbakeslagsventil i den hydrauliske koblingen 
+    mellom pumpen og sylinderen hindrer hydraulikkoljen fra å strømme bakover, slik at 
+    bordplaten forblir på den høyden den var når OPP-knappen ble sluppet. </p>
+    <p>Når NED-knappen aktiveres, åpnes en solenoidventil og lar hydraulikkoljen strømme tilbake 
+    til tanken. Motoren går ikke når løftebordet senkes. Bordplatens egenvekt bidrar til at 
+    trykket i sylinderen tvinger hydraulikkoljen til å strømme tilbake til tanken. En kontrollventil 
+    på senkeventilen VE25, kan justeres for å gi ønsket senkehastighet. Når NED-knappen er av-
+    aktivert stenges senkeventilen og bordet forblir på samme høyde som det er når knappen er 
+    aktivert. Ventilanordningen forhindrer at bordet senkes ved evt. strømbrudd.</p>
+    </article> 
+</div>
+{% endblock %}
