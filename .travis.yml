@@ -5,11 +5,12 @@ branches:
 language: node_js
 node_js:
   - "5"
+  - "5.1"
 install:
   - npm install -g gulp
   - npm install
 before_script:
-  - git remote set-url origin "https://${GH_TOKEN}@github.com/jhsveli/heis.git"
+  - git remote set-url origin "https://${GH_TOKEN}@github.com/heisogsann/heis.git"
   - git config --global user.email "jhsveli@gmail.com"
   - git config --global user.name "Travis-CI"
 script:

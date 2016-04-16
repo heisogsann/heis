@@ -4,6 +4,11 @@
 
 {% block content %}
     <div id="menu-container">
+        <article id="info">
+            <p class="ingress">
+                Her vil du finne mer informasjon om ulike produkter vi kan tilby. Foreløpig har vi kun informasjon om {{site.products.length}} produkt(er).
+            </p>
+        </article>
         <ul id="menu">            
             {% for product in site.products %}
                 <li>
