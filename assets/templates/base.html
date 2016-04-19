@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>{{page.title}} - {{site.title}}</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width">
-        <meta name="author" content="{{site.author}}" />
-        <link href="{{site.urlRoot}}styles/app.css" rel="stylesheet" media="screen" />        
-        <!-- <link rel="apple-touch-icon" sizes="57x57" href="{{site.urlRoot}}images/favicon/apple-touch-icon-57x57.png">
+
+<head>
+    <title>{{page.title}} - {{site.title}}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="{{site.author}}" />
+    <link href="{{site.urlRoot}}styles/app.css" rel="stylesheet" media="screen" />
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="{{site.urlRoot}}images/favicon/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="{{site.urlRoot}}images/favicon/apple-touch-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="{{site.urlRoot}}images/favicon/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="76x76" href="{{site.urlRoot}}images/favicon/apple-touch-icon-76x76.png">
@@ -15,41 +16,50 @@
         <link rel="apple-touch-icon" sizes="144x144" href="{{site.urlRoot}}images/favicon/apple-touch-icon-144x144.png">
         <link rel="apple-touch-icon" sizes="152x152" href="{{site.urlRoot}}images/favicon/apple-touch-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="180x180" href="{{site.urlRoot}}images/favicon/apple-touch-icon-180x180.png"> -->
-        <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/favicon-194x194.png" sizes="194x194">
-        <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/android-chrome-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="{{site.urlRoot}}images/favicon/manifest.json">
-        <link rel="shortcut icon" href="{{site.urlRoot}}images/favicon/favicon.ico">
-        <!-- <meta name="msapplication-TileColor" content="#b91d47">
+    <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="{{site.urlRoot}}images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="{{site.urlRoot}}images/favicon/manifest.json">
+    <link rel="shortcut icon" href="{{site.urlRoot}}images/favicon/favicon.ico">
+    <!-- <meta name="msapplication-TileColor" content="#b91d47">
         <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
         <meta name="msapplication-config" content="images/favicon/browserconfig.xml"> -->
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    <body class="{{page.nav}}">
-        <!-- Google Tag Manager -->
-        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFHQJQ"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PFHQJQ');</script>
-        <!-- End Google Tag Manager -->
+    <meta name="theme-color" content="#ffffff">
+</head>
 
-        
-        
-        <section id="page">
+<body class="{{page.nav}}">
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFHQJQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PFHQJQ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <section id="page">
         <header>
             <section class="content">
                 <div class="logo">
                     <a href="{{site.urlRoot}}" class="logo-img" title="Til startsiden">
-                        <img src="{{site.urlRoot}}images/gubbe.png" alt="Heis og Sånn"/>
+                        <img src="{{site.urlRoot}}images/gubbe.png" alt="Heis og Sånn" />
                     </a>
                     <a href="{{site.urlRoot}}" title="Til startsiden"><strong>Heis og Sånn</strong></a>
                 </div>
-            
                 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
                 <nav>
                     <h3>Meny</h3>
@@ -59,38 +69,41 @@
                     <a href="#kontakt">Kontakt</a>
                 </nav>
                 <label for="nav-trigger"></label>
-                
-                
             </section>
         </header>
-            <section class="content">
-                {% if page.nav !== "hjem" %}
-                <h1 class="page-title">{{page.title}}</h1>
-                {% endif %}
-                <div class="page-content">{% block content %}{% endblock %}</div>
-            </section>
+        <section class="content">
+            {% if page.nav !== "hjem" %}
+            <h1 class="page-title">{{page.title}}</h1> {% endif %}
+            <div class="page-content">{% block content %}{% endblock %}</div>
         </section>
         <footer>
-            
             <div class="content" id="kontakt">
                 <h1>Kontaktinformasjon</h1>
                 <address>
-                    Heis og sånn AS<br>
-                    Texnesbakken 22<br>
-                    1591 Sperrebotn
+                    Heis og sånn AS
+                    <br> Texnesbakken 22
+                    <br> 1591 Sperrebotn
                 </address>
-                <a href="mailto:jane@heisogsånn.no">jane@heisogsånn.no</a><br>
-                <a href="tel:97014966">97014966</a>
+                <article>
+                    <h3>Salg/generelt</h3>
+                    <a href="mailto:jane@heisogsånn.no">jane@heisogsånn.no</a>
+                    <br>
+                    <a href="tel:97014966">97014966</a>
+                </article>
+                <article>
+                    <h3>Service/support</h3>
+                    <strong>Alf (mobil)</strong>
+                    <a href="tel:94024286">94024286</a>
+                </article>
             </div>
-                             
-            
-            <div class="copyright">
+            <div class="copyright content">
                 <p>
-                    Copyright &copy; {{site.time|date('Y')}} Heis og sånn AS.                    
-                </p>                
-            </ul>
+                    Copyright &copy; {{site.time|date('Y')}} Heis og sånn AS.
+                </p>
+                </ul>
         </footer>
+    </section>
+    <script src="{{site.urlRoot}}scripts/app.js"></script>
+</body>
 
-        <script src="{{site.urlRoot}}scripts/app.js"></script>
-    </body>
 </html>
