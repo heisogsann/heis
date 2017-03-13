@@ -17,7 +17,7 @@ prose:
           element: "text"
           label: "Title"
           help: "The blog post title"
-          placeholder: "Enter title"      
+          placeholder: "Enter title"
       - name: "allowComments"
         field:
           element: "checkbox"
@@ -46,11 +46,10 @@ prose:
             element: "text"
             label: "Beskrivelse"
             help: "Produktetbeskrivelse, vises i produktlista"
-            placeholder: "Belastningsevne"  
+            placeholder: "Kort beskrivelse..."
       - name: "load"
         field:
           element: "text"
           label: "Belastningsevne"
           help: "Tekst som beskriver Belastningsevne vises i produktlista"
-          placeholder: "Belastningsevne"  
-    
+          placeholder: "Belastningsevne"
