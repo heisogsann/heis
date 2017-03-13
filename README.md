@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/danielnaab/wunderdog.svg)](https://travis-ci.org/jhsveli/heis)
+[![Build Status](https://travis-ci.org/danielnaab/wunderdog.svg)](https://travis-ci.org/heisogsann/heis)
 
 Static site generator for www.heisogsånn.no
 

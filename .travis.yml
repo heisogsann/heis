@@ -17,7 +17,7 @@ script:
   - gulp deploy
 env:
   global:
-  - secure: "="
+  - secure: "60WZ/SGv/PCXLwqwMaxHGgGnKIKLkPQJlSaMqQ5M/3BKEdhwdmw1fCPyYsR6zYEi+Lv25NpaADzXUE63o0Z/CLIxDt7xTGV2z6PLs+U25c1M3TQqhi2C3OKo96n87Aw9YFt8B4ZXowXeuktyVvkvYGP6GFbGMAdSlYZ+EvqgpeYRuhwAbGYOjVUeMUYDglxjlC+W3a9GM9QRWqCngo9wi6/lZYQmx44VJsu3aty3P9tFZghTN2pVy8p06v6QOHOWxcCvMjh7pm+XlbVDZg/oUE7eMTvxLT2D2SpfYq/7Kez3S9lrt/2fGkf81p9YWhUdrLWObRQQWNYcj5/JiTQE4n3T7HPwktZ6b1qbMlKvrYSZnu0FfJUlaVSfk77JYXhsuQzel6Zt3fjJ8rkfWiIvYZUN6ZU5kfvFAGnqqUgViOcsY0dVSFl1yuInyJhLlmt6S/GOYtONb/4WaODWrr198snrdhOpAmVg5V9QkOQuORiPuoMDtSqSjw9/26w/skirUa2+Hk7MZWP07orgeumSraEAsPuDmW+TG03lUPjo+1Wg8FHF8HnvPHrrrnqNoWGAskHP9f/iP7EAL4XqkSU7kVICcLO4+ynDUgWErVhRHrU3YGb/oJybXMGgx25XoXw0TINixofj8NhlU0T3zic/tKUZzY/XF+FbK8evicDupy0="
 notifications:
   email:
     recipients:
