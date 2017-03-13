@@ -6,17 +6,17 @@
     <div id="menu-container">
         <article id="info">
             <p class="ingress">
-                Her vil du finne mer informasjon om ulike produkter vi kan tilby. Foreløpig har vi kun informasjon om {{site.products.length}} produkt(er).
+                Her vil du finne mer informasjon om ulike produkter vi kan tilby.                
             </p>
         </article>
-        <ul id="menu">            
+        <ul id="menu">
             {% for product in site.products %}
                 <li>
                     <a href="#produkt-{{product.title|slugify|lower}}">{{product.title}}</a>
                 </li>
             {% endfor %}
         </ul>
-    </div>    
+    </div>
 
     {% for product in site.products %}
         <article id="produkt-{{product.title|slugify|lower}}" class="product">
