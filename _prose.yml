@@ -41,6 +41,18 @@ prose:
           label: "Tittel"
           help: "Produkttittel"
           placeholder: "Tittel"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Bilde"
+          help: "Skriv navnet på bildefilen"
+          placeholder: "eks bord-1.jpg"
+      - name: "image_2"
+        field:
+          element: "text"
+          label: "Bilde (sekundær)"
+          help: "Skriv navnet på bildefilen"
+          placeholder: "eks bord-1.jpg"
       - name: "shortDescription"
         field:
             element: "text"
