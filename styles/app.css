@@ -2654,7 +2654,7 @@ p {
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border: 3px solid #ddd; }
   .content .frontpage h2 {
-    font-size: 1.8rem; }
+    font-size: 1.3rem; }
   .content .frontpage p {
     font-size: 1.4rem;
     margin-bottom: .8em; }
@@ -2702,27 +2702,23 @@ header {
     padding-left: 0;
     padding-right: 0; }
   header .logo {
-    text-align: right;
+    text-align: center;
     display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-end; }
+    align-items: flex-start; }
     header .logo a {
       border: none; }
     header .logo .logo-img {
-      max-width: 180px;
-      width: 10%;
       margin-right: 3%; }
     header .logo img {
+      max-width: 140px;
       width: 100%; }
     header .logo strong {
-      font-family: 'Alfa Slab One';
+      display: block;
+      font-family: Helvetica, sans-serif;
+      letter-spacing: -1.5px;
       text-transform: uppercase;
-      font-style: italic;
       color: #f21c0f;
-      -webkit-text-stroke-width: 3px;
-      -webkit-text-stroke-color: black;
-      text-shadow: 3px 3px 1px black, 3px 0 1px black, 3px -3px 1px black, 0 3px 1px black, 0 -3px 1px black, -3px 0 1px black, -3px 3px 1px black, -3px -3px 1px black;
-      font-size: 3rem; }
+      font-size: 2.5rem; }
   header ul {
     list-style-type: none;
     font-size: 1.2em; }
@@ -2742,10 +2738,10 @@ h6 {
   color: #f21c0f; }
 
 h1 {
-  font-size: 1.6rem; }
+  font-size: 1.3rem; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 1.1rem; }
 
 a {
   color: black;
@@ -2770,8 +2766,9 @@ nav {
   position: absolute;
   top: 1em;
   right: 1.5em;
-  padding-left: 10px;
-  text-transform: uppercase; }
+  padding: 10px 10px 30px 10px;
+  text-transform: uppercase;
+  border-bottom: none; }
   nav h3 {
     display: none; }
   nav a {
@@ -2824,7 +2821,9 @@ label[for="nav-trigger"] {
   body {
     font-size: 16px; }
   a.logo::after {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  nav {
+    border-bottom: 2px dotted #ddd; } }
 
 @media only screen and (max-width: 640px) {
   body {
@@ -2852,7 +2851,8 @@ label[for="nav-trigger"] {
     background: white;
     align-items: center;
     align-content: center;
-    animation: menu .5s once backwards; }
+    animation: menu .5s once backwards;
+    border-bottom: 2px dotted #ddd; }
     nav h3 {
       display: block; }
     nav a {
