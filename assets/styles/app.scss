@@ -99,7 +99,7 @@ p {
     border: 3px solid #ddd;
     .frontpage {
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
         }
         p {
             font-size: 1.4rem;
@@ -158,30 +158,24 @@ header {
         padding-right: 0;
     }
     .logo {
-        text-align: right;
-
+        text-align: center;
         display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-end;
+        align-items: flex-start;
         a {border: none;}
         .logo-img {
-            max-width: 180px;
-            width:10%;
             margin-right: 3%;
         }
         img {
-
+            max-width: 140px;
             width: 100%;
         }
         strong {
-            font-family: 'Alfa Slab One';
+            display: block;
+            font-family: Helvetica, sans-serif;
+            letter-spacing: -1.5px;
             text-transform: uppercase;
-            font-style: italic;
             color: $red;
-            -webkit-text-stroke-width: 3px;
-            -webkit-text-stroke-color: black;
-            text-shadow: 3px 3px 1px black, 3px 0 1px black, 3px -3px 1px black, 0 3px 1px black, 0 -3px 1px black, -3px 0 1px black, -3px 3px 1px black, -3px -3px 1px black;
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
     }
     text-align: left;
@@ -208,11 +202,11 @@ h6 {
 }
 
 h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 a {
@@ -246,8 +240,9 @@ nav {
     position: absolute;
     top: 1em;
     right: 1.5em;
-    padding-left: 10px;
+    padding: 10px 10px 30px 10px;
     text-transform: uppercase;
+    border-bottom: none;
 
     h3 { display: none;}
     a {
@@ -320,6 +315,9 @@ label[for="nav-trigger"] {
             font-size: 2rem;
         }
     }
+    nav {
+      border-bottom: 2px dotted #ddd;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -360,6 +358,7 @@ label[for="nav-trigger"] {
         align-items: center;
         align-content: center;
         animation: menu .5s once backwards;
+        border-bottom: 2px dotted #ddd;
         h3 { display: block;}
         a {display: inline-block; margin: 0; padding: .1em 0; margin: .4em 0; font-weight: 300;}
     }
@@ -377,6 +376,9 @@ label[for="nav-trigger"] {
     .content {
         margin-left: .5em;
         margin-right: .5em;
+    }
+    nav {
+
     }
 }
 
