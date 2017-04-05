@@ -66,7 +66,7 @@
                     <h3>Meny</h3>
                     <!--a href="{{site.urlRoot}}om.html">Om oss</a-->
                     <!--a href="{{site.urlRoot}}loftebord.html">Om løftebord</a-->
-                    <a href="{{site.urlRoot}}produkter.html">Produkter og tjenester</a>
+                    <a href="{{site.urlRoot}}lofteinnretninger.html">Løfteinnretninger</a>
                     <a href="#kontakt">Kontakt</a>
                 </nav>
                 <label for="nav-trigger"></label>
@@ -76,10 +76,7 @@
           {% include "include/slider.html" %}
         {% endif %}
         <section class="content">
-            {% if page.nav !== "hjem" %}
-              <h1 class="page-title">{{page.title}}</h1>
-            {% endif %}
-            <div class="page-content">{% block content %}{% endblock %}</div>
+            {% block content %}{% endblock %}
         </section>
         <footer>
             <div class="content" id="kontakt">

@@ -184,28 +184,75 @@ gulp.task('testimonials', function () {
         .pipe(connect.reload())
 })
 
+gulp.task('forsidefaner', function () {
+    return gulp.src('content/forsidefaner/**/*.md')
+        .pipe(frontMatter({property: 'page', remove: true}))
+        .pipe(marked())
+        // Collect all the forsidefaner and place them on the site object.
+        .pipe((function () {
+            var forsidefaner = []
+            return through.obj(function (file, enc, cb) {
+                forsidefaner.push(file.page)
+                forsidefaner[forsidefaner.length - 1].content = file.contents.toString()
+                this.push(file)
+                cb()
+            },
+            function (cb) {
+              forsidefaner.sort(function(a, b) {
+                return (a.sort || 999) - (b.sort || 999);
+              })
+              site.forsidefaner = forsidefaner
+              cb()
+            })
+        })())
+        .pipe(connect.reload())
+})
 
-gulp.task('products', function () {
+gulp.task('forsideblokker', function () {
+    return gulp.src('content/forsideblokker/**/*.md')
+        .pipe(frontMatter({property: 'page', remove: true}))
+        .pipe(marked())
+        // Collect all the forsidefaner and place them on the site object.
+        .pipe((function () {
+            var forsideblokker = []
+            return through.obj(function (file, enc, cb) {
+                forsideblokker.push(file.page)
+                forsideblokker[forsideblokker.length - 1].content = file.contents.toString()
+                this.push(file)
+                cb()
+            },
+            function (cb) {
+                forsideblokker.sort(function(a, b) {
+                  return (a.sort || 999) - (b.sort || 999);
+                })
+                site.forsideblokker = forsideblokker
+                cb()
+            })
+        })())
+        .pipe(connect.reload())
+})
+
+gulp.task('lofteinnretninger', function () {
     // Copy product images over.
-    var images = gulp.src('content/products/*.jpg')
-        .pipe(gulp.dest('dist/images/products'))
+    var images = gulp.src('content/lofteinnretninger/*.jpg')
+        .pipe(gulp.dest('dist/images/lofteinnretninger'))
 
-    var products = gulp.src('content/products/**/*.md')
+    var lofteinnretninger = gulp.src('content/lofteinnretninger/**/*.md')
         .pipe(frontMatter({property: 'page', remove: true}))
         .pipe(marked())
         // Collect all the product and place them on the site object.
         .pipe((function () {
-            var products = []
+            var lofteinnretninger = []
             return through.obj(function (file, enc, cb) {
                 if (file.page.published){
-                    products.push(file.page)
-                    products[products.length - 1].content = file.contents.toString()
+                    lofteinnretninger.push(file.page)
+                    lofteinnretninger[lofteinnretninger.length - 1].content = file.contents.toString()
                     this.push(file)
                 }
                 cb()
             },
             function (cb) {
-                products.sort(function (a, b) {
+                lofteinnretninger.sort(function (a, b) {
                     if (a.author < b.author) {
                         return -1;
                     }
@@ -214,12 +261,12 @@ gulp.task('products', function () {
                     }
                     return 0;
                 })
-                site.products = products
+                site.lofteinnretninger = lofteinnretninger
                 cb()
             })
         })())
 
-    return merge(images, products)
+    return merge(images, lofteinnretninger)
         .pipe(connect.reload())
 })
 
@@ -230,7 +277,7 @@ gulp.task('cleanpages', function () {
 })
 
 
-gulp.task('pages', ['cleanpages', 'products',], function () {
+gulp.task('pages', ['cleanpages', 'lofteinnretninger', 'forsidefaner', 'forsideblokker'], function () {
     var html = gulp.src(['content/pages/*.html'])
         .pipe(frontMatter({property: 'page', remove: true}))
         .pipe(through.obj(function (file, enc, cb) {

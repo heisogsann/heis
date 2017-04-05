@@ -1,0 +1,11 @@
+<div class="forsidefane">
+    <h3 class="xfont">
+      {% if forsidefane.link && forsidefane.link !== "" %}
+        <a href="{{site.urlRoot}}{{forsidefane.link}}.html">{{forsidefane.title}}</a>
+      {% else %}
+        {{forsidefane.title}}
+      {% endif %}
+    </h3>
+
+    {{forsidefane.content|safe}}
+</div>

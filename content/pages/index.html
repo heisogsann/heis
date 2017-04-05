@@ -4,14 +4,22 @@
 
 {% block content %}
 
+<section id="forsidefaner">
+  {% for forsidefane in site.forsidefaner %}
+      {% include "include/_forsidefane.html" %}
+  {% endfor %}
+</section>
 
+<hr class="pagedivider" />
 
+<section id="forsideblokker">
+    {% for forsideblokk in site.forsideblokker %}
+        {% include "include/_forsideblokk.html" %}
+    {% endfor %}
+</section>
 
-<article class="info">
+<!-- <article class="info">
 	<section class="frontpage">
-
-
-
     <h2>Velkommen til Heis og sånn AS</h2>
   	<p>Vi har lang erfaring og god kompetanse på salg av vareheiser (med og
     uten personbefordring, rullestolheiser og hydrauliske løftebord samt
@@ -25,7 +33,7 @@
 
   </section>
 
-</article>
+</article> -->
 
 
 {% endblock %}

@@ -59,6 +59,11 @@ h6 {
         text-decoration: none;
         color: $header;
     }
+    &.xfont {
+      font-family: "Arial Black",	/* Windows, MacOS */ /* Fallback options */ helvetica,	/* Unix+X, MacOS */ sans-serif;
+      font-weight: normal;
+      letter-spacing: normal;
+    }
 }
 
 h1 {
@@ -92,12 +97,12 @@ p {
 }
 
 .content {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto 2em;
-    padding: 2rem;
+    // padding: 2rem;
     box-sizing: border-box;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    border: 3px solid #ddd;
+    // border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    // border: 3px solid #ddd;
     &.header-content {
       padding: 1rem 0 0;
     }
@@ -212,6 +217,7 @@ h1 {
 h2 {
     font-size: 1.1rem;
 }
+h3 { font-size: .875rem;}
 
 a {
     color: black;
@@ -284,8 +290,35 @@ label[for="nav-trigger"] {
     color: $red;
 }
 
+.pagedivider {
+  margin: 20px 0;
+}
 
-/* Make the Magic Happen */
+#forsidefaner {
+  display: flex;
+  flex-wrap: wrap;
+  &>.forsidefane {
+    flex: 0 1 auto;
+    margin: 0 10px;
+  }
+}
+
+#forsideblokker {
+  display: flex;
+  flex-wrap: wrap;
+  &>.forsideblokk {
+    min-width: 300px;
+    font-size: 15px;
+    width: 30%;
+    margin: 0 1%;
+    flex: 0 1 auto;
+    em {
+      font-size: 16px;
+      font-weight: bold;
+      color: $red;
+    }
+  }
+}
 
 .nav-trigger + label,
 #page {
@@ -376,7 +409,7 @@ label[for="nav-trigger"] {
 }
 }
 
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1200px) {
     .content {
         margin-left: .5em;
         margin-right: .5em;

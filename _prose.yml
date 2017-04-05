@@ -3,6 +3,48 @@ prose:
   siteurl: 'http://www.heisogsann.no/'
   media: 'content/media'
   metadata:
+    content/forsidefaner:
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publisert"
+          help: "Styr publisering av/på."
+          value: true
+          on: "true"
+          off: "false"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Tittel"
+          help: "Tittel slik den vises på forsida"
+          placeholder: "Tittel"
+      - name: "link"
+        field:
+          element: "text"
+          label: "Lenke"
+          help: "Hvilken side lenker denne til eks: 'lofteinnretninger'"
+          placeholder: "Lenke"
+      - name: "sort"
+        field:
+          element: "number"
+          label: "Sortering"
+          help: "Tall som styrer sortering. Lavere tall legger den tidligere-, høyere tall legger den senere i rekkefølgen"
+          placeholder: "Lenke"
+    content/forsideblokker:
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publisert"
+          help: "Styr publisering av/på."
+          value: true
+          on: "true"
+          off: "false"
+      - name: "sort"
+        field:
+          element: "number"
+          label: "Sortering"
+          help: "Tall som styrer sortering. Lavere tall legger den tidligere-, høyere tall legger den senere i rekkefølgen"
+          placeholder: "Lenke"
     content/posts:
       - name: "published"
         field:
@@ -26,7 +68,7 @@ prose:
           value: true
           on: "true"
           off: "false"
-    content/products:
+    content/lofteinnretninger:
       - name: "published"
         field:
           element: "checkbox"
