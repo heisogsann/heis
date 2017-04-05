@@ -53,7 +53,7 @@
     <!-- End Google Tag Manager -->
     <section id="page">
         <header>
-            <section class="content">
+            <section class="content header-content">
                 <div class="logo">
                     <a href="{{site.urlRoot}}" class="logo-img" title="Til startsiden">
                         <img src="{{site.urlRoot}}images/gubbe.png" alt="Heis og Sånn" />
@@ -72,9 +72,13 @@
                 <label for="nav-trigger"></label>
             </section>
         </header>
+        {% if page.nav === "hjem" %}
+          {% include "include/slider.html" %}
+        {% endif %}
         <section class="content">
             {% if page.nav !== "hjem" %}
-            <h1 class="page-title">{{page.title}}</h1> {% endif %}
+              <h1 class="page-title">{{page.title}}</h1>
+            {% endif %}
             <div class="page-content">{% block content %}{% endblock %}</div>
         </section>
         <footer>
