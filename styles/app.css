@@ -3020,14 +3020,11 @@ header {
       border: none; }
     header .logo .logo-img {
       margin-right: 3%; }
-    header .logo img {
-      max-width: 80px;
+    header .logo img.gubbe {
+      max-width: 110px;
       width: 100%; }
-    header .logo strong {
-      font-family: Helvetica, sans-serif;
-      letter-spacing: -1.5px;
-      color: #f21c0f;
-      font-size: 2.1rem; }
+    header .logo img.logotekst {
+      width: 350px; }
   header ul {
     list-style-type: none;
     font-size: 1.2em; }
