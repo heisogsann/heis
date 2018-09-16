@@ -2746,7 +2746,7 @@ body {
           text-transform: uppercase;
           color: darkgray; }
           body.home section.blog article a.more:hover {
-            color: #f21c0f; }
+            color: darkblue; }
     body.home section.welcome {
       text-align: center;
       border-bottom: solid 1px lightgray;
@@ -2775,7 +2775,7 @@ body {
           text-transform: uppercase;
           color: darkgray; }
           body.home section.info ul li a i, body.home section.info ul li a:hover {
-            color: #f21c0f; }
+            color: darkblue; }
     body.home section.testimonials {
       background-color: #eeeeee; }
       body.home section.testimonials h3 {
@@ -2818,7 +2818,7 @@ body {
               display: block; }
             body.home section.testimonials .samples article > div a.more {
               font-size: 3em;
-              color: #f21c0f; }
+              color: darkblue; }
   body.about #info {
     border-bottom: solid 1px lightgray; }
     body.about #info article.about {
@@ -2857,7 +2857,7 @@ body {
     body.contact form button {
       padding: 1em;
       font-size: 1.1em;
-      color: #f21c0f; }
+      color: darkblue; }
   body.blog .post-snippet {
     margin-bottom: 1em;
     padding: 1em;
@@ -2908,7 +2908,7 @@ h4,
 h5,
 h6 {
   margin: 1.2em 0 .5em;
-  color: #f21c0f;
+  color: darkblue;
   font-family: 'kg_lego_houseregular', HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, Sans-serif;
   font-size: 1.2rem;
   letter-spacing: 3px; }
@@ -2919,7 +2919,7 @@ h6 {
   h5 a,
   h6 a {
     text-decoration: none;
-    color: #f21c0f; }
+    color: darkblue; }
   h1.xfont,
   h2.xfont,
   h3.xfont,
@@ -2935,7 +2935,7 @@ h1 {
   text-transform: none; }
 
 h1.page-title {
-  color: #f21c0f;
+  color: darkblue;
   margin-top: 0;
   min-width: 100%;
   font-weight: normal;
@@ -2977,9 +2977,9 @@ footer {
     padding-bottom: .5em;
     text-align: center; }
   footer a {
-    color: #f21c0f; }
+    color: darkblue; }
     footer a:hover {
-      color: #f21c0f; }
+      color: darkblue; }
   footer address,
   footer p {
     padding-bottom: 1em; }
@@ -2998,7 +2998,7 @@ footer {
     text-transform: uppercase; }
     footer .copyright a,
     footer .copyright a:visited {
-      color: #f21c0f; }
+      color: darkblue; }
 
 header {
   background: white;
@@ -3041,7 +3041,7 @@ h6 {
   font-weight: bold;
   text-align: left;
   text-transform: uppercase;
-  color: #f21c0f; }
+  color: darkblue; }
 
 h1 {
   font-size: 1.3rem; }
@@ -3059,13 +3059,13 @@ a {
   a, a:visited {
     border-style: dotted; }
   a:hover {
-    color: #f21c0f; }
+    color: darkblue; }
 
 ul {
   margin-bottom: 0.5em; }
   ul li::before {
     content: "*";
-    color: #f21c0f;
+    color: darkblue;
     margin-right: .7em; }
 
 nav {
@@ -3081,7 +3081,7 @@ nav {
   nav h3 {
     display: none; }
   nav a {
-    color: #f21c0f;
+    color: darkblue;
     font-weight: bold;
     margin-left: 2em; }
     nav a:first-child {
@@ -3106,7 +3106,7 @@ label[for="nav-trigger"] {
   cursor: pointer;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
   background-size: contain;
-  color: #f21c0f; }
+  color: darkblue; }
 
 .pagedivider {
   margin: 20px 0; }
@@ -3130,7 +3130,7 @@ label[for="nav-trigger"] {
     #forsideblokker > .forsideblokk em {
       font-size: 16px;
       font-weight: bold;
-      color: #f21c0f; }
+      color: darkblue; }
 
 .nav-trigger + label,
 #page {
