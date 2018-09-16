@@ -27,6 +27,6 @@ ell montering. Kampanjeporter finnes i flere størrelser og farger.
 
 Ta kontakt for en uforpliktende portprat og evt. befaring:
 
-Alf: 940 24 286 / Kai: 928 99 559
+Kai: 928 99 559
 
 [Følg oss på Facebook.](https://www.facebook.com/heisogsann.no/ "Følg oss på Facebook")

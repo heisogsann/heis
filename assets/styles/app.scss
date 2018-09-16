@@ -51,13 +51,13 @@ h4,
 h5,
 h6 {
     margin: 1.2em 0 .5em;
-    color: $header;
+    color: $blue;
     font-family: 'kg_lego_houseregular', HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, Sans-serif;
     font-size: 1.2rem;
     letter-spacing: 3px;
     a {
         text-decoration: none;
-        color: $header;
+        color: $blue;
     }
     &.xfont {
       font-family: "Arial Black",	/* Windows, MacOS */ /* Fallback options */ helvetica,	/* Unix+X, MacOS */ sans-serif;
@@ -72,7 +72,7 @@ h1 {
 }
 
 h1.page-title {
-    color: $red;
+    color: $blue;
     margin-top: 0;
     min-width: $page-width;
     font-weight: normal;
@@ -126,9 +126,9 @@ footer {
     }
     a {
         &:hover {
-            color: $red;
+            color: $blue;
         }
-        color: $red
+        color: $blue
     }
     address,
     p {
@@ -149,7 +149,7 @@ footer {
         text-transform: uppercase;
         a,
         a:visited {
-            color: $red;
+            color: $blue;
         }
     }
 }
@@ -203,7 +203,7 @@ h6 {
     font-weight: bold;
     text-align: left;
     text-transform: uppercase;
-    color: $header;
+    color: $blue;
 }
 
 h1 {
@@ -224,7 +224,7 @@ a {
         border-style: dotted;
     }
     &:hover {
-        color: $red;
+        color: $blue;
     }
 }
 
@@ -233,7 +233,7 @@ ul {
     li {
         &::before {
             content: "*";
-            color: $red;
+            color: $blue;
             margin-right: .7em;
         }
     }
@@ -252,7 +252,7 @@ nav {
 
     h3 { display: none;}
     a {
-        color: $red;
+        color: $blue;
         font-weight: bold;
         margin-left: 2em;
         &:first-child {
@@ -283,7 +283,7 @@ label[for="nav-trigger"] {
     cursor: pointer;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
     background-size: contain;
-    color: $red;
+    color: $blue;
 }
 
 .pagedivider {
@@ -311,7 +311,7 @@ label[for="nav-trigger"] {
     em {
       font-size: 16px;
       font-weight: bold;
-      color: $red;
+      color: $blue;
     }
   }
 }

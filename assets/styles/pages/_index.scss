@@ -37,7 +37,7 @@ h1.page-title {
 }
 
 
-section {    
+section {
     margin-bottom: 15px;
     padding: 5px;
     text-align: center;
@@ -54,7 +54,7 @@ section {
                 text-transform: uppercase;
                 color: darkgray;
                 &:hover {
-                    color: $red;
+                    color: $blue;
                 }
             }
         }
@@ -92,7 +92,7 @@ section {
                     text-transform: uppercase;
                     color: darkgray;
                     i, &:hover {
-                        color: $red;
+                        color: $blue;
                     }
                 }
             }
@@ -147,7 +147,7 @@ section {
                     }
                     a.more {
                         font-size: 3em;
-                        color: $red;
+                        color: $blue;
                     }
                 }
             }
